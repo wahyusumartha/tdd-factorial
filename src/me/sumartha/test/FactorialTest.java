@@ -50,7 +50,7 @@ public class FactorialTest {
 	public void twoFactorialIsOne() {
 		Factorial factorial = new Factorial();
 		float result = factorial.getFactorialOf(2);
-		assertEquals(1, result, DELTA);
+		assertEquals(2, result, DELTA);
 	}
 	
 	@Test
