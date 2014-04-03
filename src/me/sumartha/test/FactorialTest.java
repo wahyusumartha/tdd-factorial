@@ -4,6 +4,7 @@
 package me.sumartha.test;
 
 import static org.junit.Assert.*;
+import me.sumartha.factorial.Factorial;
 
 import org.junit.After;
 import org.junit.Before;
@@ -30,7 +31,7 @@ public class FactorialTest {
 	}
 
 	@Test
-	public void test() {
+	public void zeroFactorialIsOne() {
 		Factorial factorial = new Factorial();
 		assertNotNull(factorial);
 	}
