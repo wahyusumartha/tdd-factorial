@@ -4,6 +4,7 @@
 package me.sumartha.test;
 
 import static org.junit.Assert.*;
+import junit.framework.Assert;
 import me.sumartha.factorial.Factorial;
 
 import org.junit.After;
@@ -15,6 +16,8 @@ import org.junit.Test;
  *
  */
 public class FactorialTest {
+
+	private static final double DELTA = 1e-15;
 
 	/**
 	 * @throws java.lang.Exception
@@ -33,7 +36,7 @@ public class FactorialTest {
 	@Test
 	public void zeroFactorialIsOne() {
 		Factorial factorial = new Factorial();
-		assertNotNull(factorial);
+		float result = factorial.getFactorialOf(0);
+		assertEquals(1, result, DELTA);
 	}
-
 }
