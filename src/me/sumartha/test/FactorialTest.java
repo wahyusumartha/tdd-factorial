@@ -52,4 +52,11 @@ public class FactorialTest {
 		float result = factorial.getFactorialOf(2);
 		assertEquals(1, result, DELTA);
 	}
+	
+	@Test
+	public void threeFactorialIsSix() {
+		Factorial factorial = new Factorial(); 
+		float result = factorial.getFactorialOf(3);
+		assertEquals(6, result, DELTA);
+	}
 }
