@@ -59,4 +59,11 @@ public class FactorialTest {
 		float result = factorial.getFactorialOf(3);
 		assertEquals(6, result, DELTA);
 	}
+	
+	@Test 
+	public void fourFactorialIsTwentyFour() {
+		Factorial factorial = new Factorial(); 
+		float result = factorial.getFactorialOf(4);
+		assertEquals(24, result, DELTA);
+	}
 }
